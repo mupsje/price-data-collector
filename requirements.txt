@@ -1,0 +1,11 @@
+bybit-ws==0.1.8
+certifi==2020.12.5
+chardet==4.0.0
+idna==2.10
+install==1.3.4
+py-postgresql==1.2.2
+pybit==1.1.9
+requests==2.25.1
+six==1.15.0
+urllib3==1.26.2
+websocket-client==0.53.0
