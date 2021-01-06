@@ -1,2 +1,2 @@
-# price-data-collector
+# Price data collector
 Gather and saves cryptocurrency prices for different symbols
