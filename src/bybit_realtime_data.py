@@ -37,7 +37,7 @@ if __name__ == "__main__":
         if price_data:
             prices.append(
                 Price(price_data['close'], current_timestamp(), symbol))
-            if(len(prices) > 30):
+            if(len(prices) > 60):
                 write_prices_to_log(prices)
                 prices.clear()
             else:
