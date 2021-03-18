@@ -14,7 +14,7 @@ class DB:
         )
         self.connection.autocommit = True
 
-    def create_prices_table(self,symbol):
+    def create_prices_table(self, symbol):
         print('Creating table', symbol, 'if not present to store price data')
         with self.connection.cursor() as cursor:
             cursor.execute("""

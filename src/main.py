@@ -23,7 +23,7 @@ def collect_data(symbol: str, interval:str):
     print('Starting the price collection for {}'.format(symbol))
     prices = []
     
-    database = DB(os.environ['DB-HOST'], os.environ['DB-NAME'],os.environ['DB-USERNAME'],os.environ['DB-PASSWORD'])
+    database = DB(os.environ['DBHOST'], os.environ['DBNAME'],os.environ['DBUSERNAME'],os.environ['DBPASSWORD'])
     database.create_prices_table(symbol)
 
     ws = open_bybit_socket(symbol, interval)
