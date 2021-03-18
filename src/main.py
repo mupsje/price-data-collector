@@ -43,7 +43,7 @@ if __name__ == "__main__":
     for parameter in connections_variables:
         if os.environ.get(parameter) is None:
             print('The environment variable "{}" must be present in order to connection to the database'.format(parameter))
-            raise Exception("Missing environment variable {}".format(parameter))
+            raise KeyError("Missing environment variable {}".format(parameter))
 
     interval = '1'
     symbols = ['BTCUSD', 'ETHUSD']
