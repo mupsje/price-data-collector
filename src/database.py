@@ -24,6 +24,6 @@ class DB:
 
     # Insert a batch of prices all at once on postgresql
     def batch_insert_prices(self, symbol: str, prices:list[Price]) -> None:
-        insertList = [[p.timestamp, p.value] for p in prices]
+        insert_list = [[p.timestamp, p.value] for p in prices]
         with self.connection.cursor() as cursor:
-            psycopg2.extras.execute_batch(cursor, 'INSERT INTO {} VALUES (to_timestamp(%s), %s) ON CONFLICT DO NOTHING;'.format(symbol), insertList)
+            psycopg2.extras.execute_batch(cursor, 'INSERT INTO {} VALUES (to_timestamp(%s), %s) ON CONFLICT DO NOTHING;'.format(symbol), insert_list)
