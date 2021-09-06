@@ -8,7 +8,7 @@ Gather and saves cryptocurrency prices for different symbols
 + Create a file `env.list` inside the repository with information about how to acess the database in the following format:
 ```dockerfile
 DBPASSWORD=postgres
-DBHOST=price-collector.chhoygkvsvrb.us-east-1.rds.amazonaws.com
+DBHOST=my-db-us-east-1.rds.amazonaws.com
 DBNAME=crypto-prices
 DBUSERNAME=admin
 ```
